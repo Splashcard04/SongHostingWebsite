@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/postalbum.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <a href="/"><img src="/assets/Logo White.png" alt="Harmony XYZ" id="logo"></a>
+            <a href="/" id="active" class="left"><p>Album</p></a>
+            <a href="/" class="left"><p>Home</p></a>
+            <a href="/detals" class="left"><p>Details</p></a>
+
+            <div class="right">
+                <a href="/browse" class="right"><p>Browse</p></a>
+            </div>
+        </div>
+        <div class="body">
+            <div class="header">
+                <h1 id="header">Post An Album</h1>
+            </div>
+            <div class="subheader">
+                <p id="subheader">Share an upcoming album with the world</p>
+            </div>
+            <div class="forms">
+                <form action="/albumposted" method="post">
+                    <p class="label">The title of your album</p> <br>
+                    <input type="text" name="title" placeholder="Title"> <br>
+                    <p class="label">The release date of your album</p> <br>
+                    <input type="date" name="releasedate" placeholder="Release Date"> <br>
+                    <p class="label">The time of your album's release</p> <br>
+                    <input type="time" name="releasetime" placeholder="Release Time"> <br> 
+                    <p class="label">The cover image of your album (image URL)</p> <br>
+                    <input type="text" name="image" placeholder="Album Cover (URL)"> <br>
+                    <p class="label">A primary color for your album (for page styling)</p> <br>
+                    <input type="color" name="color"  placeholder="#00000"> <br>
+                    <p class="label">Your artist name (Case Sensitive)</p> <br>
+                    <input type="text" name="artist" placeholder="Artist Name"> <br>
+                    <p class="label">Your artist password</p><br>
+                    <input type="password" name="password" placeholder="Artist Password" id="last"> <br>
+                    <br>
+                    <h1 id="tracksheader">Tracks</h1> 
+                    <button id="add">+</button>
+                    <div class="tracks" name="trackdiv"></div>
+                    <button type="submit" id="postbtn">Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        const add = document.getElementById(`add`)
+
+        let i = 0
+        add.addEventListener(`click`, (e) => {
+            i += 1
+            e.preventDefault()
+            const div = document.querySelector(`.tracks`)
+            const input = document.createElement(`input`)
+            input.type = `text`
+            input.name = `track ${i}`
+            input.placeholder = `Track ${i}`
+            input.className = `tracked`
+            const br = document.createElement(`br`)
+            div.appendChild(input)
+            div.appendChild(br)
+        })
+    </script>
+</body>
+</html>

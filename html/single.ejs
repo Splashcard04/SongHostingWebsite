@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/single.css">
+</head>
+<body style="background-image: linear-gradient(135deg,  #0c0c0c, #0c0c0c,  #0c0c0c, #0c0c0c, <%=color%>); background-attachment: fixed;" >
+    <div class="container">
+        <div class="top-bar"></div>
+        <div class="card">
+            <div class="image">
+                <img id='img' src="<%=image%>" alt="No Image Found">
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h1><%=title%></h1>
+                </div>
+                <div class="artist">
+                    <i><p><%=artist%></p></i>
+                </div>
+                <div class="countdown">
+                    <div class="days">
+                        <p id="days">00 Days</p>
+                    </div>
+                    <div class="hours">
+                        <p id="hours">00 Hours</p>
+                    </div>
+                    <div class="minutes">
+                        <p id="minutes">00 Minutes</p>
+                    </div>
+                    <div class="seconds">
+                        <p id="seconds">00 Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let countdownDate = new Date(`<%=release%>`).getTime()
+        let x = setInterval(function(){
+            let now = new Date().getTime()
+            let distance = countdownDate - now
+            
+            document.getElementById('days').innerHTML = Math.floor(distance / (1000 * 60 * 60 * 24)) + ' Days'
+            document.getElementById('hours').innerHTML = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + ' Hours'
+            document.getElementById('minutes').innerHTML = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)) + ' Minutes'
+            document.getElementById('seconds').innerHTML = Math.floor((distance % (1000 * 60)) / 1000) + ' Seconds'
+        }, 1000)
+    </script>
+</body>
+</html>

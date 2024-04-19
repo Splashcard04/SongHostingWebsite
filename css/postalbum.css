@@ -1,0 +1,134 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+}
+
+.top-bar {
+    background-color: rgb(34, 34, 34);
+    overflow: hidden;
+}
+
+#logo {
+    width: 5%;
+    padding-top: 0.1%;
+    padding-left: 1%;
+    display: inline;
+    float: left;
+    padding-bottom: 9px;
+    cursor: pointer
+}
+
+.top-bar a.left {
+    float: left;
+    color: #f2f2f2b4;
+    text-align: center;
+    padding: 3px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 1%;
+}
+
+.top-bar a:hover {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(175, 0, 0);
+    color: white
+}
+
+#active {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(175, 0, 0);
+    color: white
+}
+
+.top-bar a.right {
+    float: right;
+    color: #f2f2f2b4;
+    text-align: center;
+    padding: 3px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 1%;
+    margin-right: 15%;
+    
+}
+
+#header {
+    padding-top: 1%;
+    padding-left: 1%;
+    font-size: 50px;
+    color: rgb(175, 0, 0);
+}
+
+#subheader {
+    padding-left: 1.2%;
+    margin-top: -1.5%;
+}
+
+.forms {
+    padding-left: 1%;
+}
+
+.forms input {
+    font-size: x-large;
+    padding: 0.4%;
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(175, 0, 0);
+    color: rgb(175, 0, 0);
+    border-radius: 10px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-top: -2%;
+}
+
+.forms input::placeholder {
+    color: rgba(175, 0, 0, 0.336);
+}
+
+.forms input:focus {
+    outline: none;
+    color:rgb(175, 0, 0)
+}
+
+.label {
+    font-size: small;
+    margin-bottom: -0.08%;
+}
+
+#last {
+    margin-bottom: -5%
+}
+
+#postbtn {
+    border-style: solid;
+    border-color: rgb(175, 0, 0);
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: x-large;
+    background-color: transparent;
+    padding: 0.7% 1%;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+#postbtn:hover {
+    background-color: rgba(175, 0, 0, 0.027);
+}
+
+#tracksheader {
+    padding-left: 1%;
+    font-size: 50px;
+    color: rgb(175, 0, 0);
+}
+
+#add {
+    margin-bottom: 2%;
+    display: inline;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    padding-left: 1%;
+}

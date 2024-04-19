@@ -1,0 +1,95 @@
+{
+    "users": [
+        {
+            "name": "ShaneT",
+            "email": "shanet@example.com",
+            "password": "password",
+            "id": "2308947",
+            "pages": [
+                {
+                    "title": "Song",
+                    "release": "Oct 12 2025 00:00:00",
+                    "type": "single",
+                    "color": "#00000",
+                    "image": "https://i.ibb.co/HKdVK4p/bear.png",
+                    "url": "/ShaneT/Song"
+                },
+                {
+                    "title": "Album",
+                    "release": "Oct 12 2025 00:00:00",
+                    "type": "album",
+                    "color": "#ff78ed",
+                    "tracks": [
+                        "track one",
+                        "track two",
+                        "track three"
+                    ],
+                    "image": "https://i.ibb.co/HKdVK4p/bear.png",
+                    "url": "/ShaneT/Album"
+                }
+            ]
+        },
+        {
+            "name": "iamjakehill",
+            "password": "m0lli3d0g",
+            "email": "shr3dthr3eads@gmail.com",
+            "pages": [
+                {
+                    "title": "dying lately",
+                    "release": "2024-4-31 00:00",
+                    "type": "album",
+                    "color": "#ff0000",
+                    "image": "https://images.genius.com/2003c44ea6b1eded867011d41f6fd7a3.1000x1000x1.png",
+                    "tracks": [
+                        "by your side",
+                        "dying lately",
+                        "go if you want to",
+                        "nerve"
+                    ],
+                    "url": "/iamjakehill/dying_lately"
+                },
+                {
+                    "title": "Jeffery's A;bum",
+                    "release": "2024-12-01 00:00",
+                    "type": "single",
+                    "color": "#00fbff",
+                    "image": "https://i.pinimg.com/originals/00/e5/4b/00e54bc59b37a86f950dfc4b5f6acd62.png",
+                    "url": "/iamjakehill/Jeffery's_A;bum"
+                },
+                {
+                    "title": "myt new song",
+                    "release": "2024-12-12 00:00",
+                    "type": "single",
+                    "color": "#ff0000",
+                    "image": "https://i.pinimg.com/originals/00/e5/4b/00e54bc59b37a86f950dfc4b5f6acd62.png",
+                    "url": "/iamjakehill/myt_new_song"
+                },
+                {
+                    "title": "myt new song",
+                    "release": "2024-12-12 00:00",
+                    "type": "single",
+                    "color": "#ff0000",
+                    "image": "https://i.pinimg.com/originals/00/e5/4b/00e54bc59b37a86f950dfc4b5f6acd62.png",
+                    "url": "/iamjakehill/myt_new_song"
+                },
+                {
+                    "title": "myt new song",
+                    "release": "2024-12-12 00:00",
+                    "type": "single",
+                    "color": "#ff0000",
+                    "image": "https://i.pinimg.com/originals/00/e5/4b/00e54bc59b37a86f950dfc4b5f6acd62.png",
+                    "url": "/iamjakehill/myt_new_song"
+                },
+                {
+                    "title": "myt new song",
+                    "release": "2024-12-12 00:00",
+                    "type": "single",
+                    "color": "#ff0000",
+                    "image": "https://i.pinimg.com/originals/00/e5/4b/00e54bc59b37a86f950dfc4b5f6acd62.png",
+                    "url": "/iamjakehill/myt_new_song"
+                }
+            ],
+            "id": 678600
+        }
+    ]
+}

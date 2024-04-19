@@ -1,0 +1,104 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+}
+
+.top-bar {
+    background-color: rgb(34, 34, 34);
+    overflow: hidden;
+}
+
+#logo {
+    width: 5%;
+    padding-top: 0.1%;
+    padding-left: 1%;
+    display: inline;
+    float: left;
+    padding-bottom: 9px;
+    cursor: pointer
+}
+
+.top-bar a.left {
+    float: left;
+    color: #f2f2f2b4;
+    text-align: center;
+    padding: 3px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 1%;
+}
+
+.top-bar a:hover {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(175, 0, 0);
+    color: white
+}
+
+#active {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(175, 0, 0);
+    color: white
+}
+
+.top-bar a.right {
+    float: right;
+    color: #f2f2f2b4;
+    text-align: center;
+    padding: 3px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 1%;
+    margin-right: 15%;
+    
+}
+
+.header {
+    padding-top: 5%;
+    padding-left: 5%;
+    width: 40%;
+}
+
+#header {
+    color: black;
+    text-align: left;
+    font-size: 100px;
+    margin-bottom: -3%;
+}
+
+.subheader {
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+#subheader {
+    color: rgba(44, 44, 44, 0.849);
+    text-align: left;
+    font-size: 30px;
+}
+
+#signupbtn {
+    border-style: solid;
+    border-color: rgb(175, 0, 0);
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: x-large;
+    background-color: transparent;
+    padding: 2%;
+    cursor: pointer
+}
+
+#signupbtn:hover {
+    background-color: rgba(175, 0, 0, 0.027);
+}
+
+#dashboardbtn {
+    border: none;
+    background-color: transparent;
+    color: rgb(175, 0, 0);
+    font-size: large;
+    cursor: pointer;
+    padding: 3% 0%;
+    text-decoration: underline;
+}

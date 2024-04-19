@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <a href="/"><img src="/assets/Logo White.png" alt="Harmony XYZ" id="logo"></a>
+            <a href="/" id="active" class="left"><p>SignUp</p></a>
+            <a href="/" class="left"><p>Home</p></a>
+            <a href="/detals" class="left"><p>Details</p></a>
+            <div class="right">
+                <a href="/browse" class="right"><p>Browse</p></a>
+            </div>
+        </div>
+        <div class="body">
+            <div class="header">
+                <h1 id="header">Create Account</h1>
+            </div>
+            <div class="subheader">
+                <p id="subheader">This is your artist's account that you will use to share your music.</p>
+            </div>
+            <div class="forms">
+                <form action="/newuser" method="post">
+                    <input type="text" name="email" placeholder="Email" class="input">
+                    <input type="text" name="name" placeholder="Username"  class="input">
+                    <input type="password" name="password" placeholder="Password"  class="input">
+                    <br>
+                    <button type="submit" id="signupbtn">Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
